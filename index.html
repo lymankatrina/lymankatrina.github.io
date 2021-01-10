@@ -1,22 +1,69 @@
-<!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        <title>Katrina Lyman</title>
-    </head>
-    <body>
-        <h1>Katrina Lyman</h1>
-        <h2>CIT 230: Assignment Portal</h2>
-        <li>Lesson 02:</li>
-        <li>Lesson 03:</li>
-        <li>Lesson 04:</li>
-        <li>Lesson 05:</li>
-        <li>Lesson 06:</li>
-        <li>Lesson 07:</li>
-        <li>Lesson 08:</li>
-        <li>Lesson 09:</li>
-        <li>Lesson 10:</li>
-        <li>Lesson 11:</li>
-        <li>Lesson 12:</li>
-        <li>Lesson 13:</li>
-    </body>
+<!DOCTYPE html5>
+<html lang="en-us">  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Katrina Lyman Portal</title>
+    <meta name="description" content="Assignment portal for Katrina Lyman in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
+</head>
+<body>
+    <header>
+        <h1>Katrina L. Lyman</h1>
+        <img src="" alt="self portrait" width="280">
+    </header>
+    <main>
+        <div>
+            <h2>CIT 230: Assignment Portal</h2>
+        </div>
+        <ul>
+            <li>Lesson 02:<a href="</li>
+            <li>Lesson 03:</li>
+            <li>Lesson 04:</li>
+            <li>Lesson 05:</li>
+            <li>Lesson 06:</li>
+            <li>Lesson 07:</li>
+            <li>Lesson 08:</li>
+            <li>Lesson 09:</li>
+            <li>Lesson 10:</li>
+            <li>Lesson 11:</li>
+            <li>Lesson 12:</li>
+            <li>Lesson 13:</li>
+        </ul>   
+    </main>
+    <footer>
+        <p class ="copyright"> &copy; 2020 | Katrina L. Lyman | Utah | <a href="https://www.byui.edu/online" target="BYUI Online Learning">BYUI Online Learning</a></p>
+        <span id="currentdate"></span>
+        <script>
+            let daynames = [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+            ];
+            let months = [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+            ];
+            let d = new Date();
+            let dayName = daynames[d.getDay()];
+            let monthName = months[d.getMonth()];
+            let year = d.getFullYear();
+            let fulldate = dayName + ", " + monthName + " " + d.getDate() +", " + year;
+document.getElementById("currentdate").textContent = fulldate;
+          </script>
+    </footer>
+</body>
 </html>
