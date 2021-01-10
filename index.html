@@ -18,7 +18,7 @@
             <h2>CIT 230: Assignment Portal</h2>
         </div>
         <ul>
-            <li>Lesson 02:</li>
+            <li>Lesson 02:<a href="https://lymankatrina.github.io/" target="Assignment Link">Assignment Link</a> </li>
             <li>Lesson 03:</li>
             <li>Lesson 04:</li>
             <li>Lesson 05:</li>
@@ -35,7 +35,8 @@
     <footer>
         <p class ="copyright"> &copy; 2020 | Katrina L. Lyman | Utah | <a href="https://www.byui.edu/online" target="BYUI Online Learning">BYUI Online Learning</a></p>
         <span id="currentdate">Last updated:</span>
-        <script>
+    </footer>
+    <script>
             let daynames = [
                 "Sunday",
                 "Monday",
@@ -64,13 +65,7 @@
             let monthName = months[d.getMonth()];
             let year = d.getFullYear();
             let fulldate = dayName + ", " + monthName + " " + d.getDate() +", " + year;
-document.getElementById("currentdate").textContent = fulldate;
-          </script>
-          <style>
-              h1, h2, h3, h4, h5, h6 {
-  background-color: #F0C808;
-  font-family: 'Domine', serif;
-          </style>
-    </footer>
+            document.getElementById("currentdate").textContent = fulldate;
+    </script>
 </body>
 </html>
