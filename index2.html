@@ -26,12 +26,7 @@
         &copy; <span id="currentyear"></span> | Katrina L. Lyman | Utah | <a href="https://www.byui.edu/online">BYUI Online Learning</a><br>
         Last Updated: <span id="updatedate"></span>
     </footer>
-    <script>
-        const options = {year:'numeric'};
-        document.getElementById('currentyear').textContent = new Date().toLocaleDateString('en-US', options);
-
-        let updatedate = Date.parse(document.lastModified);
-        document.getElementById('updatedate').textContent = updatedate;
+    <script src="script/main.js">
     </script>
 </body>
 </html>

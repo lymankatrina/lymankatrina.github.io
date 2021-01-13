@@ -1,5 +1,5 @@
-const currentyear = todaysdate.getFullYear();
-document.getElementById('currentyear').textContent = currentyear;
+const options = {year:'numeric'};
+        document.getElementById('currentyear').textContent = new Date().toLocaleDateString('en-US', options);
 
-const updatedate = Date.parse(document.lastModified);
-document.getElementById('updatedate').textContent = updatedate;
+        let updatedate = Date.parse(document.lastModified);
+        document.getElementById('updatedate').textContent = updatedate;

@@ -6,13 +6,14 @@ body {
 header, main, footer {
     margin: 1.25rem;
     max-width: 760px;
+    padding: 1.5;
 }
 
 header, footer {
     background-color: purple;
     color: white;
     text-align: left;
-    padding: 1.5rem;
+    border-radius: 10px;
 }
 
 header img {
