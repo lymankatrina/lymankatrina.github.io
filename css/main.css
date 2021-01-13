@@ -7,7 +7,7 @@ body {
 header, main, footer {
     margin: 1.25rem;
     max-width: 760px;
-    padding: 1.5;
+    padding: 18px;
 }
 
 header, footer {
