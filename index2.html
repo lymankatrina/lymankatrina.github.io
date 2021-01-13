@@ -23,8 +23,12 @@
         </section>
     </main>
     <footer>
-        &copy; 2021 | Katrina L. Lyman | Utah | <a href="https://www.byui.edu/online">BYUI Online Learning</a><br>
-        Last Updated 01/13/2021
+        &copy; <span id="currentyear"></span> | Katrina L. Lyman | Utah | <a href="https://www.byui.edu/online">BYUI Online Learning</a><br>
+        Last Updated: <span id="updatedate"></span>
     </footer>
+    <script>
+        const currentyear = new Year();
+        document.getElementById('currentyear').textcontent = new Year().toLocalDateString('en-US', options); 
+    </script>
 </body>
 </html>
