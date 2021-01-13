@@ -24,8 +24,13 @@ header img {
     box-shadow: 5px 5px 5px #999;
 }
 
+h1 {
+    font-family: 'Kalam', cursive;
+}
+
 section h2 {
     border-bottom: 1px solid black;
+    font-family: 'Anton', sans-serif;
 }
 
 a {
