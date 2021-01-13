@@ -10,10 +10,11 @@ header, main, footer {
     padding: 18px;
 }
 
-header, footer {
+header {
     background-color: purple;
     color: white;
     text-align: left;
+    margin: 50px;
     border-radius: 10px;
 }
 
@@ -30,4 +31,12 @@ section h2 {
 
 a {
     color: limegreen;
+}
+
+footer {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
 }
