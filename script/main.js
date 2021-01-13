@@ -1,5 +1,5 @@
-const cy = Date.prototype.getFullYear();
-document.getElementById('currentyear') = cy;
+const cy = new Date();
+document.getElementById('currentyear') = cy.getFullYear();
 
-const lu = Date.parse(document.lastModified);
-document.getElementById('updatedate') = lu;
+const lu = new Date();
+document.getElementById('updatedate') = lu.Date.parse(document.lastModified);
