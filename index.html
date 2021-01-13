@@ -34,38 +34,10 @@
     </main>
     <footer>
         <p class ="copyright"> &copy; 2020 | Katrina L. Lyman | Utah | <a href="https://www.byui.edu/online" target="BYUI Online Learning">BYUI Online Learning</a></p>
-        <span id="currentdate">Last updated:</span>
+        <span id="nlastModified">Last updated:</span>
     </footer>
-    <script>
-            let daynames = [
-                "Sunday",
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday"
-            ];
-            let months = [
-                "January",
-                "February",
-                "March",
-                "April",
-                "May",
-                "June",
-                "July",
-                "August",
-                "September",
-                "October",
-                "November",
-                "December"
-            ];
-            let d = new Date();
-            let dayName = daynames[d.getDay()];
-            let monthName = months[d.getMonth()];
-            let year = d.getFullYear();
-            let fulldate = dayName + ", " + monthName + " " + d.getDate() +", " + year;
-            document.getElementById("currentdate").textContent = fulldate;
-    </script>
+<script>
+    let nLastModif = Date.parse(document.lastModified);
+</script>    
 </body>
 </html>
