@@ -11,12 +11,12 @@ header, main, footer {
 header, footer {
     background-color: purple;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 1.5rem;
 }
 
 header img {
-    max-width: 150px;
+    max-width: 200px;
     float: right;
     border: 1px solid #ccc;
     box-shadow: 5px 5px 5px #999;
