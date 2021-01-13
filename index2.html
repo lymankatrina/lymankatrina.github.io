@@ -27,7 +27,7 @@
         Last Updated: <span id="updatedate"></span>
     </footer>
     <script>
-        const currentyear = new Year();
+        const options = {year: 'numeric'};
         document.getElementById('currentyear').textcontent = new Year().toLocalDateString('en-US', options); 
     </script>
 </body>
