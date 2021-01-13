@@ -5,39 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Katrina Lyman Portal</title>
     <meta name="description" content="Assignment portal for Katrina Lyman in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="title">
         <h1>Katrina L. Lyman</h1>
-        <img src="https://cdn.glitch.com/11198617-a7cb-461c-b0b7-d9958aa5238b%2FKatrina%20(2).jpg?v=1610259490385" alt="self portrait" width="280">
-        </div>
+        <img src="img/Katrina_Lyman_Image.jpg" alt="Katrina Lyman Portrait">
     </header>
     <main>
-        <div>
+        <section>
             <h2>CIT 230: Assignment Portal</h2>
-        </div>
-        <ul>
-            <li>Lesson 02:<a href="https://lymankatrina.github.io/" target="Assignment Link">Assignment Link</a> </li>
-            <li>Lesson 03:</li>
-            <li>Lesson 04:</li>
-            <li>Lesson 05:</li>
-            <li>Lesson 06:</li>
-            <li>Lesson 07:</li>
-            <li>Lesson 08:</li>
-            <li>Lesson 09:</li>
-            <li>Lesson 10:</li>
-            <li>Lesson 11:</li>
-            <li>Lesson 12:</li>
-            <li>Lesson 13:</li>
-        </ul>   
+            <ul>
+                <li>Lesson 02:<a href="lesson02.html" target="lesson 02">Assignment Link</a></li>
+                <li>Lesson 03:<a href="lesson03.html" target="lesson 03">Assignment Link</a></li>
+                <li>Lesson 04:<a href="lesson04_1.html" target="lesson 04_1">Link</a> | <a href="lesson04_2.html" target="lesson 04_2">Link</a></li>
+            </ul>
+        </section>
     </main>
     <footer>
-        <p class ="copyright"> &copy; 2020 | Katrina L. Lyman | Utah | <a href="https://www.byui.edu/online" target="BYUI Online Learning">BYUI Online Learning</a></p>
-        <span id="nlastModified">Last updated:</span>
+        &copy; <span id="currentyear"></span> | Katrina L. Lyman | Utah | <a href="https://www.byui.edu/online">BYUI Online Learning</a><br>
+        Last Updated: <span id="updatedate"></span>
     </footer>
-<script>
-    let nLastModif = Date.parse(document.lastModified);
-</script>    
+    <script src="script/main.js">
+    </script>
 </body>
 </html>
