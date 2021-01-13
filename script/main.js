@@ -1,5 +1,5 @@
-let cy = new Date();
-document.getElementById('currentyear') = cy.getFullYear;
+const currentyear = todaysdate.getFullYear();
+document.getElementById('currentyear').textContent = currentyear;
 
-let nLastModif = Date.parse(document.lastModified);
-document.getElementById('updatedate') = nLastModif;
+const updatedate = Date.parse(document.lastModified);
+document.getElementById('updatedate').textContent = updatedate;
