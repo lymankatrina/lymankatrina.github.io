@@ -18,9 +18,7 @@ header, footer {
 header img {
     max-width: 150px;
     float: right;
-    margin: 12px;
     border: 1px solid #ccc;
-    padding: 10px;
     box-shadow: 5px 5px 5px #999;
     overflow: hidden;
 }
