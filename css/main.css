@@ -15,6 +15,7 @@ header, footer {
     color: navy;
     text-align: center;
     border-radius: 10px;
+    font-family: 'Anton', sans-serif;
 }
 
 header img {
@@ -24,13 +25,9 @@ header img {
     box-shadow: 5px 5px 5px #999;
 }
 
-h1 {
-    font-family: 'Kalam', cursive;
-}
-
 section h2 {
     border-bottom: 1px solid black;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Kalam', cursive;   
 }
 
 a {
