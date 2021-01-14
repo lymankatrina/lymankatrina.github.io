@@ -27,9 +27,19 @@ header img {
 
 section h2 {
     border-bottom: 1px solid black;
-    font-family: 'Kalam', cursive;   
+    font-family: 'Kalam', cursive;
+    color: navy;   
+}
+
+section ul {
+    font-family: 'Nunito Sans', sans-serif;
+    color: navy;
 }
 
 a {
     color: navy;
+}
+
+a.hover {
+    background-color: goldenrod;
 }
