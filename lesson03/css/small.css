@@ -46,10 +46,24 @@ p {
     padding: 1rem;
     border-radius: 3rem;
     font-size: 18px;
+    line-height: 24px;
 }
-.persona {
-    background-color: #E6EBE0;
-    color: #000000;
+section {
+    margin-left: 3rem;
+}
+h3 {
+    background-color: #5d576b;
+    color: #E6EBE0;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: .25rem;
+}
+ul {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-left: 2rem;
+    line-height: 1.5rem;
 }
 div :nth-child(3) {
     background-color: #E6EBE0;
