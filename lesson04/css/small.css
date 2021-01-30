@@ -1,13 +1,14 @@
+body {
+    margin: 0 auto;
+}
 header {
     display:grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: 150px auto;
+    grid-template-rows: auto auto auto;
     background-color: #305252;
     color: #E6EBE0;
-    text-align: center;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: .25rem;
+    text-align: Start;
+    margin: 0 auto;
 }
 header h1 {
     background-color: #305252;
@@ -16,11 +17,8 @@ header h1 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row: 1;
-    align-self: end;
     line-height: 1.5;
-    padding-top: .5rem;
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding: 1rem 0 0 1rem;
 }
 header div {
     background-color: #305252;
@@ -29,29 +27,48 @@ header div {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row: 2;
-    align-self: start;
-    padding-bottom: .5rem;
+    padding: 0 0 1rem 1rem;
 }
 .logo {
-    float: left;
-    grid-column-start: 1;
-    grid-row-start: 1;
+    grid-column: 1-2;
+    grid-row: 1;
     grid-row-end: 3;
-    grid-column-end: 2;
 }
 nav {
     display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
+    background-color: #ed6a5a;
+    font-family: 'Montserrat', sans-serif;
+    border:none;
+}
+nav button {
+    padding: .7rem 2%;
+    background-color: transparent;
+    border:none;
+    font-size: 1.6rem;
+    color: #E6EBE0;
+    align-self: flex-start;
 }
 nav ul {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    padding: 1rem;
-    margin-left: 2rem;
-    line-height: 1.5rem;
-    list-style: none;
-    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #E6EBE0;
+    border-top:1px solid rgba(0,0,0,0.3);
+}
+nav ul li.active a{
+    background-color: rgba(0,0,0,0.2);
+}
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+nav ul.hide {
+    display: none;
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Bodoni Moda', serif;
@@ -61,7 +78,6 @@ h2{
     color: #000000;
     margin: 1rem;
     padding: 1rem;
-    border-radius: .25rem;
 }
 h3 {
     background-color: #5d576b;
@@ -69,4 +85,19 @@ h3 {
     margin: 1rem;
     padding: 1rem;
     border-radius: .25rem;
+}
+footer {
+    background-color: #305252;
+    color: #E6EBE0;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+}
+footer a {
+    color: #ed6a5a;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
