@@ -1,38 +1,30 @@
-body {
-    margin: 0 auto;
-}
 header {
-    display:grid;
-    grid-template-columns: 150px auto;
-    grid-template-rows: auto auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #305252;
     color: #E6EBE0;
-    text-align: Start;
-    margin: 0 auto;
 }
-header h1 {
-    background-color: #305252;
-    color: #E6EBE0;
-    font-size: 1.5rem;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row: 1;
+.headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     line-height: 1.5;
-    padding: 1rem 0 0 1rem;
 }
-header div {
+.headings h1 {
+    text-align: center;
+    padding:unset;
+    margin:unset;
+}
+.headings h3 {
     background-color: #305252;
-    color: #ed6a5a;
-    font-size: 1.25rem;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row: 2;
-    padding: 0 0 1rem 1rem;
+    color: #F4F1BB;
+    text-align: center;
+    padding:unset;
+    margin:unset;
 }
-.logo {
-    grid-column: 1-2;
-    grid-row: 1;
-    grid-row-end: 3;
+header img {
+    margin: 0 .5rem 0 0;
 }
 nav {
     display: flex;
@@ -45,9 +37,8 @@ nav button {
     padding: .7rem 2%;
     background-color: transparent;
     border:none;
-    font-size: 1.6rem;
+    font-size: 18px;
     color: #E6EBE0;
-    align-self: flex-start;
 }
 nav ul {
     list-style-type: none;
@@ -70,8 +61,17 @@ nav ul li a:hover {
 nav ul.hide {
     display: none;
 }
-h1,h2,h3,h4,h5,h6 {
+main {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+h1,h2 {
+    font-size: 18px;
     font-family: 'Bodoni Moda', serif;
+}
+h3,h4,h5,h6 {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
 }
 h2{
     background-color: #9BC1BC;
@@ -84,9 +84,9 @@ h3 {
     color: #E6EBE0;
     margin: 1rem;
     padding: 1rem;
-    border-radius: .25rem;
 }
 footer {
+    max-width: 64rem;
     background-color: #305252;
     color: #E6EBE0;
     text-align: center;
@@ -94,7 +94,7 @@ footer {
     padding: 1rem;
 }
 footer a {
-    color: #ed6a5a;
+    color: #F4F1BB;
 }
 .clearfix:after {
     content: "";

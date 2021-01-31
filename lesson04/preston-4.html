@@ -15,11 +15,13 @@
     <body>
         <header>
             <img class="logo" src="images/weather_logo.png" alt="weather logo">
-            <h1>Bear River Range Weather & Events</h1>
-            <div class="motto">Explore the Bear River Range</div>
+            <section class="headings">
+                <h1>Bear River Range<br> Weather & Events</h1>
+                <h3>Explore the Bear River Range</h3>
+            </section>
         </header>
         <nav>
-            <button onclick="toggleMenu()">&#9776;</button>
+            <button onclick="toggleMenu()">&#9776; Menu</button>
             <ul id="primaryNav" class="hide">
                 <li class="active"><a href="index.html" target="home">Home</a></li>
                 <li><a href="index.html" target="preston">Preston</a></li>
@@ -38,8 +40,8 @@
                 <h3>Hotels, Restaurants, & Shopping</h3>
         </main>
         <footer>
-            &copy; <span id="currentyear"></span> | Katrina L. Lyman | Utah | <a href="https://www.byui.edu/online">BYUI Online Learning</a><br>
-            Last Updated: <span id="updatedate"></span>
+            <div>&copy; <span id="currentyear"></span> | Katrina L. Lyman | Utah | <a href="https://www.byui.edu/online">BYUI Online Learning</a><br>
+            Last Updated: <span id="updatedate"></span></div>
         </footer>
         <script src="js/main.js">
         </script>
