@@ -1,34 +1,32 @@
 header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: #305252;
     color: #E6EBE0;
 }
 .headings {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     line-height: 1.5;
 }
 .headings h1 {
-    text-align: center;
-    padding:unset;
-    margin:unset;
+    text-align: right;
+    color: white;
+    font-size: 22px;
 }
 .headings h3 {
     background-color: #305252;
     color: #F4F1BB;
-    text-align: center;
     padding:unset;
     margin:unset;
 }
 header img {
-    display: flex;
     margin: 0 .5rem 0 0;
 }
 nav {
     flex-direction: column;
+    align-content: center;
+    justify-content: center;
     background-color: #ed6a5a;
     font-family: 'Montserrat', sans-serif;
     border:none;
@@ -84,6 +82,12 @@ h3 {
     color: #E6EBE0;
     margin: 1rem;
     padding: 1rem;
+}
+.hero_ph {
+    margin: 10px auto;
+    border: 1px solid #E6EBE0;
+    width: 900px;
+    height: 300px;
 }
 footer {
     max-width: 64rem;
