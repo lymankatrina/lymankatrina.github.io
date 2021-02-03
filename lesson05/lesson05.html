@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang=en-us>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Katrina Lyman Weather Site</title>
+        <meta name='description' content="week 03 weather site katrina lyman WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css"> 
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/weather_logo.png" alt="weather logo">
+            <section class="headings">
+                <h1>Bear River Range<br> Weather & Events</h1>
+                <h3>Explore the Bear River Range</h3>
+            </section>
+        </header>
+        <nav>
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="index.html" target="home">Home</a></li>
+                <li><a href="index.html" target="preston">Preston</a></li>
+                <li><a href="index.html" target="soda-springs">Soda Springs</a></li>
+                <li><a href="index.html" target="fish-haven">Fish Haven</a></li>
+                <li><a href="index.html" target="storm-center">Storm Center</a></li>
+                <li><a href="index.html" target="gallery">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Preston Idaho</h2>
+            <div class="hero_box">
+                <div class="hero_ph"></div>
+                <section class="weather_summary">
+                    <h3>Weather Summary</h3>
+                    <p>Label: Value</p>
+                    <p>Label: Value</p>
+                    <p>Label: Value</p>             
+                </section>
+            </div>
+                <h3>Weather Conditions</h3>
+                <h3>News & Events</h3>
+                <h3>Historical Sites & Local Attractions</h3>
+                <h3>Outdoor Recreation Information</h3>
+                <h3>Dining, Shopping, & Accomodations</h3>
+        </main>
+        <footer>
+            <div>&copy; Bear River Range Weather and Events | Attributions | Katrina L. Lyman</a><br>
+            <span id="updatedate"></span></div>
+        </footer>
+        <script src="js/main.js">
+        </script>
+    </body>
+</html>
