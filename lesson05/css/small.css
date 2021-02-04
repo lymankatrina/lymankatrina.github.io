@@ -14,11 +14,9 @@ header {
     color: white;
     font-size: 22px;
 }
-.headings h3 {
+.motto {
     background-color: #305252;
     color: #F4F1BB;
-    padding:unset;
-    margin:unset;
 }
 header img {
     margin: 0 .5rem 0 0;
