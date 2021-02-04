@@ -1,20 +1,19 @@
 header {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: #305252;
-    color: #E6EBE0;
 }
 .headings {
     flex-direction: column;
     line-height: 1.5;
 }
 .headings h1 {
-    text-align: right;
+    text-align: center;
     color: white;
     font-size: 22px;
 }
-.headings h3 {
+.motto {
     background-color: #305252;
     color: #F4F1BB;
     padding:unset;
@@ -22,12 +21,12 @@ header {
 }
 header img {
     margin: 0 .5rem 0 0;
+    border: 1px solid #305252;
 }
 nav {
-    flex-direction: column;
     align-content: center;
     justify-content: center;
-    background-color: #ed6a5a;
+    background: linear-gradient(#688E89,#305252);
     font-family: 'Montserrat', sans-serif;
     border:none;
 }
@@ -36,7 +35,10 @@ nav button {
     background-color: transparent;
     border:none;
     font-size: 18px;
-    color: #E6EBE0;
+    color: #F4F1BB;
+}
+nav button:hover {
+    background-color: rgba(0,0,0,0.3);
 }
 nav ul {
     list-style-type: none;
@@ -47,14 +49,16 @@ nav ul li a {
     display: block;
     padding: .8rem 2%;
     text-decoration: none;
-    color: #E6EBE0;
+    color: #F4F1BB;
     border-top:1px solid rgba(0,0,0,0.3);
 }
 nav ul li.active a{
     background-color: rgba(0,0,0,0.2);
+    color:#F4F1BB;
 }
 nav ul li a:hover {
     background-color: rgba(0,0,0,0.3);
+    color:#F4F1BB;
 }
 nav ul.hide {
     display: none;
@@ -91,8 +95,8 @@ h3 {
 }
 footer {
     max-width: 64rem;
-    background-color: #305252;
-    color: #E6EBE0;
+    background: linear-gradient(#688E89,#305252);
+    color: #F4F1BB;
     text-align: center;
     margin: 0 auto;
     padding: 1rem;
