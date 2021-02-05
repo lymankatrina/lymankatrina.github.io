@@ -83,6 +83,9 @@ div :nth-child(9) {
     background-color: #ED6A5A;
     color:#E6EBE0;
 }
+div :nth-child(10) {
+    background-color: #F4F1BB;
+}
 img {
     display: block;
     margin-left: auto;
