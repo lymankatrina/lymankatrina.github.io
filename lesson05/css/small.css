@@ -96,12 +96,9 @@ h3 {
 .weather_summary {
     position: absolute;
     display: block;
-    /*grid-template-rows: 20% 15% 15% 15% 15% 15% 5%;
-    align-items: stretch;
-    justify-items: flex-start;*/
     top: 30px;
     left: 30px;
-    background: radial-gradient( rgba(104,142,137,.85), rgba(48,82,82,.90));
+    background: radial-gradient( #305252, rgba(48,82,82,.90));
     box-shadow: 0 0 30px #305252;
     color:#F4F1BB;
     font-family: "montserrat", sans-serif;
