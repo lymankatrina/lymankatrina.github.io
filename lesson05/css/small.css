@@ -123,6 +123,7 @@ h3 {
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
+    background-color: #E6EBE0;
 }
 .forecast h1 {
     grid-row: 1;
