@@ -98,7 +98,7 @@ h3 {
     display: block;
     top: 30px;
     left: 30px;
-    background: radial-gradient( #305252, rgba(48,82,82,.90));
+    background-color: #305252;
     box-shadow: 0 0 30px #305252;
     color:#F4F1BB;
     font-family: "montserrat", sans-serif;
@@ -119,7 +119,7 @@ h3 {
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    width: 100%;
+    max-width: 64rem;
     background-color: #E6EBE0;
 }
 .forecast h1 {
