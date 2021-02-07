@@ -1,31 +1,12 @@
-function toggleMenu() {
-document.getElementById("primaryNav").classList.toggle("hide");
+function initMap() {
+    const myLatLng = { lat: -25.363, lng: 131.044 };
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 4,
+        center: myLatLng,
+    });
+    new google.maps.Marker({
+        position: myLatLng,
+        map,
+        title: "Hello World!",
+    });
 }
-const options = {year:'numeric'};
-
-const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-];
-const days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
-];
-let today = new Date()
-let finalDate = days[today.getDay()] + ", " + today.getDate() + " " + months[today.getMonth()] + " " + today.getFullYear()
-document.getElementById("updatedate").innerHTML = finalDate;
