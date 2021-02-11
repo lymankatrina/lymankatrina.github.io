@@ -1,0 +1,26 @@
+@media only screen and (min-width: 34rem) {
+    h1,h2 {
+
+    }
+    h3,h4,h5,h6 {
+        font-family: 'Montserrat', sans-serif;
+    }
+    .news-container img {
+        max-width: 320px;
+    }
+    .news-container {
+    display: block;
+    }
+    .news-container img {
+        float:right;
+        margin-left: 10px;
+    }
+    .lmap {
+        display: block;
+        float: left;
+    }
+    .smap {
+        display: none;
+    }
+  
+}
