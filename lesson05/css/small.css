@@ -92,10 +92,9 @@ h3 {
     margin: 0 auto;
     border: 1px solid #E6EBE0;
     width: 100%;
-    height: 300px;
+    height: auto;
 }
 .weather_summary {
-    position: absolute;
     display: block;
     top: 30px;
     left: 30px;
@@ -114,31 +113,32 @@ h3 {
     padding-left: 15px;
 }
 .forecast {
-    margin: 0 auto;
-    justify-items: center;
-    padding: 1rem;
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    max-width: 64rem;
     background-color: #E6EBE0;
+    align-items: center;
 }
 .forecast h1 {
     grid-row: 1;
     grid-column: 1 / -1;
     color:#5d576b;
     border-bottom: 10px solid #5d576b;
+    text-align: center;
 }
 .day-forecast {
     grid-row: 2;
-    width:fit-content;
-    font-size: 15px;
+    align-self:center;
+    justify-self: center;
+       
 }
 .day-forecast h2 {
     font-size: 14px;
+    text-align: center;
 }
 .day-forecast p {
     font-size: 12px;
+    text-align: center;
 }
 .news {
     margin: 1rem;
@@ -170,6 +170,10 @@ footer {
 }
 .lmap {
     display: none;
+    width:50%; 
+    height:auto; 
+    border:0; 
+    nav-index:0;
 }
 footer a {
     color: #F4F1BB;

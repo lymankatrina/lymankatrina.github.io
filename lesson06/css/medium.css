@@ -5,6 +5,13 @@
     h3,h4,h5,h6 {
         font-family: 'Montserrat', sans-serif;
     }
+    .hero_ph {
+        height: 100%;
+        width: auto;
+    }
+    .weather_summary {
+        position: absolute;
+    }
     .news-container img {
         max-width: 320px;
     }
