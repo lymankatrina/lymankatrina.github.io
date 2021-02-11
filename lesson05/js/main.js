@@ -19,3 +19,4 @@ function myFunction() {
         banner.style.display = 'none';
     }
 }
+myFunction();
