@@ -10,3 +10,12 @@ function initMap() {
         title: "Hello World!",
     });
 }
+function myFunction() {
+    var dayOfWeek = new Date().getDay();
+    var banner = document.getElementById('pancakes');
+    if (dayOfWeek == 4) {
+        banner.style.display = 'block';
+    } else {
+        banner.style.display = 'none';
+    }
+}

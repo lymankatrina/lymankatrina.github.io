@@ -173,7 +173,8 @@ footer {
 footer a {
     color: #F4F1BB;
 }
-aside {
+#pancakes {
+    display: none;
     color:#305252;
     font-family: 'montserrat', sans-serif;
     font-size: 22px;
