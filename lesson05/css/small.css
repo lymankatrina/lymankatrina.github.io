@@ -172,8 +172,7 @@ footer {
     display: none;
     width:50%; 
     height:auto; 
-    border:0; 
-    nav-index:0;
+    border:0;
 }
 footer a {
     color: #F4F1BB;
