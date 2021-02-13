@@ -23,3 +23,9 @@ function myFunction() {
     }
 }
 myFunction();
+
+WebFont.load({
+    google: {
+        families: ['montserrat', 'Bodoni Moda']
+    }
+});

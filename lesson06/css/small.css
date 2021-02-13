@@ -17,8 +17,9 @@ header {
     font-family: 'Montserrat', sans-serif;
     color: #F4F1BB;
     text-align: center;
+    padding-bottom: 1rem;
 }
-header img {
+.logo {
     margin: 10px;
     border: 1px solid #305252;
 }
@@ -72,6 +73,9 @@ h1,h2 {
 h3,h4,h5,h6 {
     font-family: 'Montserrat', sans-serif;
 }
+P {
+    font-family: 'Montserrat',sans-serif;
+}
 h2{
     color: #305252;
     margin: 1rem;
@@ -89,10 +93,13 @@ h3 {
     margin: 1rem;
 }
 .hero_ph {
-    margin: 0 auto;
-    border: 1px solid #E6EBE0;
     width: 100%;
     height: auto;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+.hero_ph img {
+    width: 100%;
 }
 .weather_summary {
     display: block;
@@ -115,9 +122,11 @@ h3 {
 .forecast {
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     background-color: #E6EBE0;
-    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 1rem;
 }
 .forecast h1 {
     grid-row: 1;
@@ -125,40 +134,36 @@ h3 {
     color:#5d576b;
     border-bottom: 10px solid #5d576b;
     text-align: center;
+    justify-self: stretch;
 }
 .day-forecast {
-    grid-row: 2;
-    align-self:center;
-    justify-self: center;
-       
+    text-align: center;
+    align-items: center;
+    justify-items: center;
 }
 .day-forecast h2 {
+    font-size: 16px;
+}
+.day-forecaast p {
     font-size: 14px;
-    text-align: center;
 }
-.day-forecast p {
-    font-size: 12px;
-    text-align: center;
+.news-figure {
+    width: auto;
+    float: right;
+    margin: 0 1rem .5rem 1rem;
 }
-.news {
-    margin: 1rem;
-    background-color: white;
-    color: #305252;
-    padding: 0;
-}
-.news-container {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    margin: 1rem;
-    align-items: center; 
-}
-.news-container img {
-    width: 100%;
-    margin: 0px;
+.news-article-1 h4 {
+    margin: 0 1rem 1rem 1rem;
 }
 .news-article {
-    align-content: center;
-    justify-content: center;   
+    text-align: justify;
+    margin: 0 1rem 0 1rem;
+}
+.news-article a {
+    color: #5d576b;
+}
+.news-article a:hover {
+    color: #ed6a5a;
 }
 footer {
     max-width: 64rem;
@@ -168,14 +173,29 @@ footer {
     margin: 0 auto;
     padding: 1rem;
 }
+.footer-block {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+footer h4 {
+    padding: .5rem;
+    margin: 0;
+}
+footer p {
+    padding-top: 0;
+    line-height: 1.5rem;
+}
 .lmap {
     display: none;
+    padding: 1rem;
     width:50%; 
     height:auto; 
     border:0; 
 }
 footer a {
     color: #F4F1BB;
+    padding: .25rem;
 }
 #pancakes {
     display: none;

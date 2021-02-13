@@ -5,8 +5,6 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <title>Katrina Lyman Weather Site</title>
         <meta name='description' content="week 03 weather site katrina lyman WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Montserrat&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css"> 
         <link rel="stylesheet" href="css/small.css">
         <link rel="stylesheet" href="css/medium.css">
@@ -16,7 +14,9 @@
     <body>
         <aside id="pancakes">Saturday is Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park.</aside>
         <header>
-            <img class="logo" src="images/weather_logo.png" alt="weather logo">
+            <figure class="logo">
+                <img src="images/weather_logo.png" alt="weather logo">
+            </figure>
             <section class="headings">
                 <h1>Bear River Range<br> Weather & Events</h1>
                 <div class="motto">Explore the Bear River Range</div>
@@ -25,18 +25,19 @@
         <nav>
             <button onclick="toggleMenu()">&#9776; Menu</button>
             <ul id="primaryNav" class="hide">
-                <li><a href="index.html" target="home">Home</a></li>
-                <li class="active"><a href="preston-5.html" target="preston">Preston</a></li>
-                <li><a href="index.html" target="soda-springs">Soda Springs</a></li>
-                <li><a href="index.html" target="fish-haven">Fish Haven</a></li>
-                <li><a href="index.html" target="storm-center">Storm Center</a></li>
-                <li><a href="index.html" target="gallery">Gallery</a></li>
+                <li><a href="#" target="home">Home</a></li>
+                <li class="active"><a href="preston-6.html" target="preston">Preston</a></li>
+                <li><a href="#" target="soda-springs">Soda Springs</a></li>
+                <li><a href="#" target="fish-haven">Fish Haven</a></li>
+                <li><a href="#" target="storm-center">Storm Center</a></li>
+                <li><a href="#" target="gallery">Gallery</a></li>
             </ul>
         </nav>
         <main>
             <h2>Preston Idaho</h2>
             <div class="hero_container">
-                <img class="hero_ph" src="images/Preston_Idaho_US_Archive.jpg" alt="picture of bear river mountains">
+                <figure class="hero_ph"><img src="images/wdd230_image_franklin_Large_overlay.jpg" alt="picture of bear river mountains">
+                </figure>
                 <section class="weather_summary">
                     <h3>Weather Summary</h3>
                     <p>currently: Sunny</p>
@@ -50,34 +51,35 @@
                 <h1>5 Day Forecast for Preston</h1>
                 <article class="day-forecast">
                     <h2>Monday</h2>
-                    <img src="images/iconfinder_rain_3233856.png" alt="rain icon">
+                    <img src="images/iconfinder_rain_3233856 (1).png" alt="rain icon">
                     <p>Rain</p>
                 </article>
                 <article class="day-forecast">
                     <h2>Tuesday</h2>
-                    <img src="images/iconfinder_snow_3233849.png" alt="snow icon">
+                    <img src="images/iconfinder_snow_3233849 (1).png" alt="snow icon">
                     <p>Snow</p>
                 </article>
                 <article class="day-forecast">
                     <h2>Wednesday</h2>
-                    <img src="images/iconfinder_sunny_3233850.png" alt="sun icon">
+                    <img src="images/iconfinder_sun_3233848 (1).png" alt="sun icon">
                     <p>Sunny</p>
                 </article>
                 <article class="day-forecast">
                     <h2>Thursday</h2>
-                    <img src="images/iconfinder_cloudy_3233857.png" alt="cloudy icon">
+                    <img src="images/iconfinder_cloudy_3233857 (1).png" alt="cloudy icon">
                     <p>Cloudy</p>
                 </article>
                 <article class="day-forecast">
                     <h2>Friday</h2>
-                    <img src="images/iconfinder_lightning_3233854.png" alt="lightning icon">
+                    <img src="images/iconfinder_lightning_3233854 (1).png" alt="lightning icon">
                     <p>Thunderstorms</p>
                 </article>
             </article>
                 <h3>News & Events</h3>
-                    <h3 class="news">Mountain Lion Encounters</h3>   
-                    <article class="news-container">
-                        <img src="images/mt_lion_300px.jpg" alt="mountain_lion_wikimedia_commons">    
+                    <article class="news-article-1">
+                        <h2>Mountain Lion Encounters</h2> 
+                        <h4>by Katrina Lyman</h4>
+                        <figure class="news-figure"><img src="images/mt_lion_300pxW.jpg" alt="mountain_lion_wikimedia_commons"></figure>    
                         <p class="news-article">
                         While crossing paths with a mountain lion is out of the ordinary, there 
                         seem to be a few encounters in southeast Idaho every year. This causes some 
@@ -93,7 +95,7 @@
                         <br><br>
                         If you observe a mountain lion or signs of a mountain lion near your
                         home, business or public recreation area, contact the 
-                        <a href="idfg.idaho.gov" target="idfg">Idaho Department of Fish and Game</a>.
+                        <a href="https://idfg.idaho.gov" target="idfg">Idaho Department of Fish and Game</a>.
                         </p>
                     </article>
                 <h3>Historical Sites & Local Attractions</h3>
@@ -102,16 +104,20 @@
         </main>
         <footer>
             <iframe class="lmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.4862669173117!2d-111.87576958447634!3d42.097055459662265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e967e1ebc7%3A0x14469667cfe31546!2s30%20N%201st%20E%2C%20Preston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1612672783355!5m2!1sen!2sus"></iframe>
-            <p>Bear River Range Weather & Events</p>
-            <a class="smap" href="https://goo.gl/maps/TB1SYEHqRFzLPjNG9"><img src="images/iconfinder_21_Location_map_pin_mark_navigation_6442797.png" alt="map pin icon"></a>
-            30 N 1st E Preston, ID 83263
+            <div class="footer-block"><h4>Bear River Range Weather & Events</h4>
+            <a class="smap" href="https://goo.gl/maps/TB1SYEHqRFzLPjNG9"><img src="images/iconfinder_google_4975305 (1).png" alt="map pin icon"></a>
+            <p>30 N 1st E Preston, ID 83263
             <br>&#9742 999.999.9999
-            <br>&#x1F4E7 mail@bearriverrange.com
-            <br><a href="https://facebook.com"><img src="images/iconfinder_1_Facebook_colored_svg_copy_5296499.png" alt="facebook"></a>
-            <a href="https://pinterest.com"><img src="images/iconfinder_1_Pinterest_colored_svg_5296503.png" alt="pinterest"></a>
-            <a href="https:/twitter.com"><img src="images/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.png" alt="twitter"></a>
+            <br>&#x1F4E7 mail@bearriverrange.com<br>
+            <br><a href="https://facebook.com"><img src="images/iconfinder_1_Facebook_colored_svg_copy_5296499 (1).png" alt="facebook"></a>
+            <a href="https://pinterest.com"><img src="images/iconfinder_1_Pinterest_colored_svg_5296503 (1).png" alt="pinterest"></a>
+            <a href="https://twitter.com"><img src="images/iconfinder_2018_social_media_popular_app_logo_twitter_3225183 (1).png" alt="twitter"></a>
+            <a href="https://instagram.com"><img src="images/iconfinder_2018_social_media_popular_app_logo_instagram_3225191.png" alt="instagram"></a></p>
+            </div>
         </footer>
         <script src="js/main.js">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
         </script>
     </body>
 </html>
