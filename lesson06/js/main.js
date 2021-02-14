@@ -24,8 +24,8 @@ function myFunction() {
 }
 myFunction();
 
-WebFont.load({
+WebFont.load(
+    {
     google: {
         families: ['montserrat'], ['Bodoni Moda']
-    }
-});
+    }});
