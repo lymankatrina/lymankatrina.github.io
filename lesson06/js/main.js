@@ -22,10 +22,3 @@ function myFunction() {
         banner.style.display = 'none';
     }
 }
-myFunction();
-
-WebFont.load(
-    {
-    google: {
-        families: ['montserrat'], ['Bodoni Moda']
-    }});
