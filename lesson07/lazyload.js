@@ -1,50 +1,43 @@
-
-const numSteps = 20.0;
-
-let boxElement;
-let prevRatio = 0.0;
-let increaseingColor = "rgba(40, 40, 190, ratio)";
-let decreaseingColor = "rgba(190, 40, 40, ratio)";
-
-window.addEventListener("load", (event) => {
-    boxElement = document.querySelector("#box");
-    createObserver();
-}, false);
-
-function createObserver() {
-    let observer;
-
-    let options = {
-        root: null,
-        rootMargin: "0px",
-        threshold: buildThresholdList()
-    };
-
-    observer = new IntersectionObserver(handleIntersect, options);
-    observer.observe(boxElement);
-}
-
-function buildThresholdList() {
-    let thresholds = [];
-    let numSteps = 20;
-
-    for (let i=1.0; i<=numSteps; i++) {
-        let ratio = i/numSteps;
-        thresholds.push(ratio);
+//preload placeholder image
+function preloadImage(img) {
+    const src = img.getAttribute('data-src');
+    if(!src) {
+        return;
     }
+    img.src = src;
+}
+// get images to load
+const imagesToLoad = document.querySelectorAll('[data-src]');
 
-    thresholds.push(0);
-    return thresholds;
+//set parameters for intersectional observer
+const imgOptions = {
+    threshold: 0,
+    rootMargin: "50px"
+};
+
+//check to see if image is intersecting view window
+if('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((items, observer) => {
+        items.forEach((item) => {
+            if(item.isIntersecting) {
+                loadImages(item.target);
+                observer.unobserve(item.target);
+            }
+        });
+    });
+    imagesToLoad.forEach((img) => {
+        observer.observe(img);
+    });
+}   else {
+    imagesToLoad.forEach((img) => {
+        loadImages(img);
+    });
 }
 
-function handleIntersect(entries, observer) {
-    entries.forEach((entry) => {
-        if (entry.intersectionRatio > prevRatio) {
-            entry.target.style.backgroundColor = increasingColor.replace("ratio", entry.intersectionRatio);   
-        } else {
-            entry.target.style.backgroundColor = decreasingColor.replace("ratio", entry.intersectionRatio);
-        }
-        
-        prevRatio = entry.intersectionRatio;
-    });
+//load images and change data-src attribute
+const loadImages = (image) => {
+    image.setAttribute('src', image.getAttribute('data-src'));
+    image.onload = () => {
+        image.removeAttribute('data-src');
+    };
 }

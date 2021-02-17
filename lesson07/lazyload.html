@@ -8,16 +8,12 @@
         <link rel="stylesheet" href="lazyload.css">
     </head>
     <body>
-        <div id="box">
-            <div class="vertical">
-                Welcome to <strong>The Box!</strong>
-            </div>
-        </div>
-    <picture><img src="https://placekitten.com/300/400"></picture>
-        <picture><img src="https://placekitten.com/300/400"></picture>
-        <picture><img src="https://placekitten.com/300/400"></picture>
-        <picture><img src="https://placekitten.com/300/400"></picture>
-        <picture><img src="https://placekitten.com/300/400"></picture>//
-        <script src="lazyload.js"></script>
+        <h1>Progressive Photo Loading</h1>
+        <picture class="image-container"><img data-src="images/matt_and_oliver.jpg" alt="Man with Dog" class="img-large" src="images/placeholder.gif" class="img-small"></picture>
+        <picture class="image-container"><img data-src="images/lizard_southeast_utah.jpg" alt="Lizard in Nature" class="img-large" src="images/placeholder.gif" class="img-small"></picture>
+        <picture class="image-container"><img data-src="images/hole_in_the_rock.jpg" alt="Hole in the Rock Trail" class="img-large" src="images/placeholder.gif" class="img-small"></picture>
+        <picture class="image-container"><img data-src="images/florida_pier.jpg" alt="Bird in flight in Florida" class="img-large" src="images/placeholder.gif" class="img-small"></picture>
+        <picture class="image-container"><img data-src="images/jeep_descent_hole_in_the_rock.jpg" alt="Jeeps on Hole in the Rock Trail" class="img-large" src="images/placeholder.gif" class="img-small"></picture>
+    <script src="lazyload.js"></script>
     </body>
 </html>
