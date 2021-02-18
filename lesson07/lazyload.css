@@ -4,10 +4,10 @@ body {
     flex-wrap: nowrap;
     text-align: center;
 }
-.image-container {
+picture {
     align-self: center;
 }
-.img-small {
+img source {
     filter: blur(.3rem);
     transition: filter 0.5s;
 }
