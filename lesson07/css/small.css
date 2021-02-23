@@ -107,7 +107,7 @@ h3 {
     background-color: #305252;
     box-shadow: 0 0 30px #305252;
     color:#F4F1BB;
-    font-family: "montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     border: 1px solid #305252;
 }
 .weather_summary h3 {
@@ -200,7 +200,7 @@ footer a {
 #pancakes {
     display: none;
     color:#305252;
-    font-family: 'montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.4rem;
     font-weight: bold;
     background:linear-gradient(#ed6a5a,#F4F1BB,#ed6a5a);
@@ -212,4 +212,24 @@ footer a {
     content: "";
     display: table;
     clear: both;
+}
+main.gallery-container {
+    margin: 0 auto;
+}
+section.gallery {
+    display: grid;
+    grid-template-columns: 100%;
+}
+figure {
+    border-radius: 1rem;
+    box-shadow:0 .5rem 1.25rem 0 #305252;
+    justify-content: space-around;
+}
+figure img {
+    border-radius: 1rem 1rem 0 0;
+    width:100%;
+}
+figcaption {
+    padding: .5rem;
+    font-family: 'Montserrat', sans-serif;
 }

@@ -22,4 +22,7 @@
         height: 100%;
         width: 100%;
 }
+section.gallery {
+    grid-template-columns: 33% 33% 33%;
+}
 }
