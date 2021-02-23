@@ -13,11 +13,11 @@ table, th, td {
     border: 1px solid rgb(192,192,192);
     padding: .5rem;
 }
-.title {
+thead tr:nth-child(1) {
     background-color: #7fb9c2;
     font-size: 1.5rem;
 }
-.subtitle {
+thead tr:nth-child(2) {
     color: white;
     background-color: #628ca6;
 }
