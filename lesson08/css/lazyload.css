@@ -1,0 +1,13 @@
+body {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+picture {
+    align-self: center;
+}
+img source {
+    filter: blur(.3rem);
+    transition: filter 0.5s;
+}
