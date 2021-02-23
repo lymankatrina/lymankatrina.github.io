@@ -6,18 +6,16 @@
         <title>Katrina Lyman Weather Image Gallery </title>
         <meta name='description' content="week 07 weather site katrina lyman WDD 230: Web Frontend Development at Brigham Young University - Idaho">
         <link rel="stylesheet" href="css/normalize.css"> 
-        <link rel="stylesheet" href="css/small.css">
-        <link rel="stylesheet" href="css/medium.css">
-        <link rel="stylesheet" href="css/large.css">
+        <link rel="stylesheet" href="css/table.css">
         <link rel="shortcut icon" href="favicon.ico">
     </head>
     <body>
         <table>
             <thead>
-                <tr>
-                    <th>ACME Wildwest</th>
+                <tr class="title">
+                    <th scope="row" colspan="3">ACME Wildwest</th>
                 </tr>
-                <tr>
+                <tr class="subtitle">
                     <th>Period</th>
                     <th>Sales</th>
                     <th>Sales Goal</th>
@@ -42,11 +40,11 @@
                 <tr>
                     <td>November</td>
                     <td>$8,610</td>
-                    <td>$7,500</td>
+                    <td class="goal">$7,500</td>
                 </tr>
                 <tr>
                     <td>Black Friday</td>
-                    <td>$3,200</td>
+                    <td colspan="2">$3,200</td>
                 </tr>
                 <tr>
                     <td>December</td>
@@ -56,7 +54,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td>Compiled 12.20.2020 by bRauls</td>
+                    <th scope="row" colspan="3">Compiled 12.20.2020 by bRauls</td>
                 </tr>
         </table>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
