@@ -233,3 +233,59 @@ figcaption {
     padding: .5rem;
     font-family: 'Montserrat', sans-serif;
 }
+form {
+    margin: 1rem;
+}
+form fieldset {
+    margin: 2rem 0;
+    border: 2px dotted #ed6a5a;
+    border-radius: .75rem;
+    padding: .5rem 2%;
+    width: 100%;
+    max-width: 30rem;
+}
+form legend {
+    color: #305252;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+form label.contact, form div, form label.storm {
+    display: block;
+    padding-top: 1rem;
+    color: #305252;
+    font-size: 1rem;
+}
+form label.contact input, form label.contect select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 2px #E6EBE0;
+    border-radius: .25rem;
+    padding: .75rem;
+    color: #305252;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #E6EBE0;
+}
+form input.submitBtn {
+    border: none;
+    background-color: #ed6a5a;
+    color: black;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    width: 96%;
+    max-width: 20rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+form label.contact input:required {
+    border-left: #ed6a5a solid 6px;
+}
+form label.contact input:required:valid {
+    border-left: #688E89 solid 6px;
+}
+label.danger {
+    display: block;
+    padding: .75rem;
+    color: #305252;
+}
