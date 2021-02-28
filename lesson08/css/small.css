@@ -289,3 +289,11 @@ label.danger {
     padding: .75rem;
     color: #305252;
 }
+.thanks {
+    margin: 1rem;
+    border: 2px dotted #ed6a5a;
+    border-radius: .75rem;
+    padding: .5rem 2%;
+    width: 100%;
+    max-width: 30rem;
+}
