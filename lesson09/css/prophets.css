@@ -1,0 +1,41 @@
+footer {
+    max-width: 820px;
+    margin: 0 auto;
+}
+h1 {
+    margin: 5px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #eee;
+    text-align: center;
+}
+h2 {
+    color:navy;
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+div {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 5px;
+}
+section {
+    background-color: goldenrod;
+    padding-bottom: 15px;
+}
+img {
+    box-shadow: 0 0 30px #333;
+    width: 200px;
+    height: 245px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    max-width: 980px;
+    margin: 0 auto;
+}
