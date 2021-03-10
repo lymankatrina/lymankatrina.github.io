@@ -21,7 +21,11 @@ fetch(requestURL)
         //use template literals        
         townName.innerHTML = `${hometown.name}`;
         townMotto.innerHTML = `${hometown.motto}`;
-        townImg.innerHTML = `${hometown.photo}`;
+        //townImg.innerHTML = `${hometown.photo}`;
+
+        townImg.innerHTML = ('src', `C:\Users\lyman\Documents\WDD230 Repository\lymankatrina.github.io\lesson09\images\ ${hometown.townImg}`);
+        townImg.setAttribute('alt', `Picture of a scenic view of ${hometown.name}`);
+
         yearFounded.innerHTML = `Year Founded: ${hometown.yearFounded}`;
         population.innerHTML = `Current Population: ${hometown.currentPopulation}`
         averageRainfall.innerHTML = `averageRainfall: ${hometown.averageRainfall}`
