@@ -9,7 +9,8 @@ fetch(requestURL)
     const towns = jsonObject['towns'];
     //select output location    
     const cards = document.querySelector('.cards');
-    towns.forEach(town => {
+    const hometown = towns.filter(x => x.name == "Fish Haven"|| x.name =="Preston" || x.name == "Soda Springs");
+    hometown.forEach(hometown => {
         let card = document.createElement('section');
         let townName = document.createElement('h1');
         let townMotto = document.createElement('h2');
@@ -18,12 +19,12 @@ fetch(requestURL)
         let averageRainfall = document.createElement('p');
         let townImg = document.createElement('img');
         //use template literals        
-        townName.innerHTML = `${town.name}`;
-        townMotto.innerHTML = `${town.motto}`;
-        townImg.innerHTML = `${town.photo}`;
-        yearFounded.innerHTML = `Year Founded: ${town.yearFounded}`;
-        population.innerHTML = `Current Population: ${town.currentPopulation}`
-        averageRainfall.innerHTML = `averageRainfall: ${town.averageRainfall}`
+        townName.innerHTML = `${hometown.name}`;
+        townMotto.innerHTML = `${hometown.motto}`;
+        townImg.innerHTML = `${hometown.photo}`;
+        yearFounded.innerHTML = `Year Founded: ${hometown.yearFounded}`;
+        population.innerHTML = `Current Population: ${hometown.currentPopulation}`
+        averageRainfall.innerHTML = `averageRainfall: ${hometown.averageRainfall}`
         card.append(townName);
         card.append(townMotto);
         card.append(townImg);

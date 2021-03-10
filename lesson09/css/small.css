@@ -213,3 +213,17 @@ footer a {
     display: table;
     clear: both;
 }
+.cards {
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+}
+.cards section {
+    margin: 1rem;
+    background-color: #305252;
+    box-shadow: .5rem .5rem .75rem #688E89;
+    color:#F4F1BB;
+}
+.cards h1 {
+    color:#E6EBE0;
+}
