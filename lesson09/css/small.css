@@ -214,16 +214,25 @@ footer a {
     clear: both;
 }
 .cards {
-    margin: 0 auto;
     text-align: center;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .cards section {
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 0;
     background-color: #305252;
     box-shadow: .5rem .5rem .75rem #688E89;
     color:#F4F1BB;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    max-width: 320px;
 }
 .cards h1 {
     color:#E6EBE0;
+}
+.cards h2 {
+    color: #F4F1BB;
+    font-size: 18px;
 }
