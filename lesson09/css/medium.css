@@ -30,9 +30,6 @@
     .smap {
         display: none;
     }
-    .cards {
-        display: flex;
-    }
     .cards section {
         display: flex;
         flex-direction: row;
@@ -46,6 +43,6 @@
         padding: 1rem;
     }
     .cards section article {
-        width: 320px;
+        width: 300px;
     }
 }
