@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang=en-us>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Katrina Lyman Weather Site</title>
+        <meta name='description' content="week 03 weather site katrina lyman WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+        <link rel="stylesheet" href="css/normalize.css"> 
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+    <body>
+        <header>
+            <figure class="logo">
+                <img src="images/weather_logo_175.jpg" alt="logo">
+            </figure>
+            <section class="headings">
+                <h1>Bear River Range Weather & Events</h1>
+                <div class="motto">Explore the Bear River Range</div>
+            </section>
+        </header>
+        <nav>
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="../lesson09/index.html" target="home">Home</a></li>
+                <li><a href="../lesson06/preston-6.html" target="preston">Preston</a></li>
+                <li><a href="#" target="soda-springs">Soda Springs</a></li>
+                <li><a href="#" target="fish-haven">Fish Haven</a></li>
+                <li><a href="../lesson08/stormcenter.html" target="storm-center">Storm Center</a></li>
+                <li><a href="../lesson07/gallery-7.html" target="gallery">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="cards"></div>
+        </main>
+        <footer>
+            <iframe class="lmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.4862669173117!2d-111.87576958447634!3d42.097055459662265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e967e1ebc7%3A0x14469667cfe31546!2s30%20N%201st%20E%2C%20Preston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1612672783355!5m2!1sen!2sus"></iframe>
+            <div class="footer-block"><h4>Bear River Range Weather & Events</h4>
+            <a class="smap" href="https://goo.gl/maps/TB1SYEHqRFzLPjNG9"><img src="images/iconfinder_google_4975305.png" alt="map pin icon"></a>
+            <p>30 N 1st E Preston, ID 83263
+            <br>&#9742; 999.999.9999
+            <br>&#x1F4E7; mail@bearriverrange.com<br>
+            <br><a href="https://facebook.com"><img src="images/iconfinder_1_Facebook_colored_svg_copy_5296499.png" alt="facebook"></a>
+            <a href="https://pinterest.com"><img src="images/iconfinder_1_Pinterest_colored_svg_5296503.png" alt="pinterest"></a>
+            <a href="https://twitter.com"><img src="images/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.png" alt="twitter"></a>
+            <a href="https://instagram.com"><img src="images/iconfinder_2018_social_media_popular_app_logo_instagram_3225191.png" alt="instagram"></a></p>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/webfont.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/home.js"></script>
+    </body>
+</html>

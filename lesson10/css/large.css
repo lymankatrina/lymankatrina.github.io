@@ -1,0 +1,43 @@
+@media only screen and (min-width: 64rem) {
+    nav button{
+        display: none;
+    }  
+    nav ul.hide {
+        display: flex;
+        justify-content: center;
+    }
+    nav {
+        align-items: center;
+    }  
+    nav ul li {
+        float: left;
+    }
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .8rem 1rem;
+    }
+    .hero_ph {
+        height: 100%;
+        width: 100%;
+    }
+    .cards {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .cards section {
+        flex-wrap: wrap;
+        width: 340px;
+        height: 540px;
+    }
+    .cards section img {
+        padding: 0 0 1rem 0;
+        width: 100%;
+    }
+    .cards section article {
+        width: 100%;
+    }
+}

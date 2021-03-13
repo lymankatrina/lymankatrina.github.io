@@ -1,0 +1,54 @@
+body {
+    max-width: 980px;
+    margin: 0 auto;
+}
+h1 {
+    margin: 5px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #eee;
+    color: navy;
+    text-align: center;
+    font-family: 'RocknRoll One', sans-serif;
+}
+h2 {
+    color:navy;
+    text-align: center;
+    font-family: 'RocknRoll One', sans-serif;
+}
+p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+div {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 5px;
+    margin: 5px;
+}
+section {
+    background-color: goldenrod;
+    padding-bottom: 15px;
+}
+img {
+    box-shadow: 0 0 15px #333;
+    width: 200px;
+    height: 245px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    max-width: 970px;
+    margin: 0 auto;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: navy;
+}
