@@ -6,6 +6,16 @@ fetch(apiURL)
 //call the id in the html file to write to it//
     const temperature = document.querySelector('#current-temp');
     temperature.textContent = jsObject.main.temp;
+
+    const currently = document.querySelector('#currently');
+    currently.textContent = jsObject.weather[0].description;
+
+    const humid = document.querySelector('#humidity');
+    humid.textContent = jsObject.main.humidity;
+
+    const windy = document.querySelector('#windspeed');
+    windy.textContent = jsObject.wind.speed;
+
 //get image//
     const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;// note the concatenation
     const desc = jsObject.weather[0].description;  // note how we reference the weather array
