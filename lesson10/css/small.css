@@ -136,15 +136,15 @@ h3 {
     text-align: center;
     justify-self: stretch;
 }
-.day-forecast {
+.dayforecast {
     text-align: center;
     align-items: center;
     justify-items: center;
 }
-.day-forecast h2 {
+.dayforecast h2 {
     font-size: 16px;
 }
-.day-forecaast p {
+.dayforecaast p {
     font-size: 14px;
 }
 .news-figure {
