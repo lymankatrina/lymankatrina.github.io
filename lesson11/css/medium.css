@@ -45,4 +45,7 @@
     .cards section article {
         width: 300px;
     }
+    section.gallery {
+        grid-template-columns: 50% 50%;
+    }
 }
