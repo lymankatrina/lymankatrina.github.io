@@ -137,15 +137,16 @@ h3 {
     text-align: center;
     justify-self: stretch;
 }
-.day-forecast {
+.dayforecast {
     text-align: center;
     align-items: center;
     justify-items: center;
+    background-color: #9BC1BC;
 }
-.day-forecast h2 {
+.dayforecast h2 {
     font-size: 16px;
 }
-.day-forecaast p {
+.dayforecaast p {
     font-size: 14px;
 }
 .news-figure {
@@ -342,4 +343,10 @@ label.danger {
     padding: .5rem 2%;
     width: 100%;
     max-width: 30rem;
+}
+.dayforecast {
+    text-transform: capitalize;
+}
+#currently {
+    text-transform: capitalize;
 }

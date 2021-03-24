@@ -13,7 +13,6 @@ fetch(apiURL2)
         //reduce the list array to the five forecasts....40
         const str = jsObject2.list[item].dt_txt;
         //filter
-        //var n = str.includes('18:00:00');
         //console.log(n);
         lists.forEach(forecast => {
             if (forecast.dt_txt.includes('18:00:00')) {
@@ -22,12 +21,12 @@ fetch(apiURL2)
                 //get forecast day
                 document.getElementById(`forecastday${day+1}`).textContent = dayofWeek[d.getDay()];
                 //get forecast icon
-                //document.getElementById(`icon${day+1}`).setAttribute('src', forecast.icon.imgsrc);
-                //document.getElementById(`icon${day+1}`).setAttribute('alt', forecast.main.desc);
+                document.getElementById(`icon${day+1}`).setAttribute('src', `http://openweathermap.org/img/wn/${forecast.weather[item].icon}@2x.png`);
+                document.getElementById(`icon${day+1}`).setAttribute('alt', forecast.weather[item].description);
                 //get forecast temp
                 document.getElementById(`forecasttemp${day+1}`).textContent = forecast.main.temp;
                 //get forecast desc
-                document.getElementById(`forecastdesc${day+1}`).textContent = forecast.main.desc;
+                document.getElementById(`forecastdesc${day+1}`).textContent = forecast.weather[item].description;
                 day++;
         }});
     });
