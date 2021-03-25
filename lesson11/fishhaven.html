@@ -3,7 +3,7 @@
     <head>
         <meta charset='utf-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <title>Katrina Lyman Weather Site Fish Haven Page</title>
+        <title>Katrina Lyman Weather Site Preston Page</title>
         <meta name='description' content="week 10 weather site katrina lyman WDD 230: Web Frontend Development at Brigham Young University - Idaho">
         <link rel="stylesheet" href="css/normalize.css"> 
         <link rel="stylesheet" href="css/small.css">
@@ -12,7 +12,7 @@
         <link rel="shortcut icon" href="favicon.ico">
     </head>
     <body>
-        <aside id="pancakes">Saturday is Fish Haven Farmer's Market in the Park! 9:00 a.m. Saturday at the city park.</aside>
+        <aside id="pancakes">Saturday is Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park.</aside>
         <header>
             <figure class="logo">
                 <img src="images/weather_logo_175.jpg" alt="logo">
@@ -26,15 +26,15 @@
             <button onclick="toggleMenu()">&#9776; Menu</button>
             <ul id="primaryNav" class="hide">
                 <li><a href="index.html"  target="weather site home page">Home</a></li>
-                <li><a href="preston.html" target="preston">Preston</a></li>
+                <li class="active"><a href="preston.html" target="preston">Preston</a></li>
                 <li><a href="sodasprings.html" target="soda-springs">Soda Springs</a></li>
-                <li class="active"><a href="fishhaven.html" target="fish-haven">Fish Haven</a></li>
+                <li><a href="fishhaven.html" target="fish-haven">Fish Haven</a></li>
                 <li><a href="stormcenter.html" target="storm-center">Storm Center</a></li>
                 <li><a href="gallery.html" target="gallery">Gallery</a></li>
             </ul>
         </nav>
         <main>
-            <h2>Fish Haven Idaho</h2>
+            <h2>Preston Idaho</h2>
             <div class="hero_container">
                 <figure class="hero_ph">
                     <img src="images/preston_960px.jpg" alt="Sunset view of fields and distant mountains" sizes="100vw"
@@ -44,47 +44,48 @@
                 </figure>
                 <section class="weather_summary">
                     <h3>Weather Summary</h3>
-                    <p>Currently: <span id="currently"></span><span id="imgsrc"> &nbsp; </span><img src="" alt="" id="icon"></p>
-                    <p>Temperature: <span id="current-temp"></span> &#8457;</p>
-                    <p>Wind Chill: <span id="windchill"></span> &#8457;</p>
-                    <p>Humidity: <span id="humidity"></span> %</p>
-                    <p>Wind Speed: <span id="windspeed"></span> mph</p>             
+                    <span id="imgsrc"></span><img src="" alt="" id="icon">
+                    <p id="currentlyp">Currently: <span id="currently"></span></p>
+                    <p id="current-tempp">Temperature: <span id="current-temp"></span> &#8457;</p>
+                    <p id="windchillp">Wind Chill: <span id="windchill"></span> &#8457;</p>
+                    <p id="humidityp">Humidity: <span id="humidity"></span> %</p>
+                    <p id="windspeedp">Wind Speed: <span id="windspeed"></span> mph</p>             
                 </section>
             </div>
             <article class="forecast">
-                <h1>5 Day Forecast for Fish Haven</h1>
+                <h1>5 Day Forecast for Preston</h1>
                 <article class="dayforecast">
                     <h2 id="forecastday1"></h2>
-                    <picture id="forecasticon1"><img src="" alt="" id="icon1"></picture>
+                    <img src="" alt="" id="icon1">
                     <p id="forecastdesc1"></p>
-                    <p id="forecasttemp1"> &#8457;</p>
+                    <p id="forecasttemp1"></p>
                 </article>
                 <article class="dayforecast">
                     <h2 id="forecastday2"></h2>
-                    <picture id="forecasticon2"><img src="" alt="" id="icon2"></picture>
+                    <img src="" alt="" id="icon2">
                     <p id="forecastdesc2"></p>
-                    <p id="forecasttemp2"> &#8457;</p>
+                    <p id="forecasttemp2"></p>
                 </article>
                 <article class="dayforecast">
                     <h2 id="forecastday3"></h2>
-                    <picture id="forecasticon3"><img src="" alt="" id="icon3"></picture>
+                    <img src="" alt="" id="icon3">
                     <p id="forecastdesc3"></p>
-                    <p id="forecasttemp3"> &#8457;</p>
+                    <p id="forecasttemp3"></p>
                 </article>
                 <article class="dayforecast">
                     <h2 id="forecastday4"></h2>
-                    <picture id="forecasticon4"><img src="" alt="" id="icon4"></picture>
+                    <img src="" alt="" id="icon4">
                     <p id="forecastdesc4"></p>
-                    <p id="forecasttemp4"> &#8457;</p>
+                    <p id="forecasttemp4"></p>
                 </article>
                 <article class="dayforecast">
                     <h2 id="forecastday5"></h2>
-                    <picture id="forecasticon5"><img src="" alt="" id="icon5"></picture>
+                    <img src="" alt="" id="icon5">
                     <p id="forecastdesc5"></p>
-                    <p id="forecasttemp5"> &#8457;</p>
+                    <p id="forecasttemp5"></p>
                 </article>
             </article>
-                <h3>News & Events</h3>
+                <h3>Current News</h3>
                     <article class="news-article-1">
                         <h2>Mountain Lion Encounters</h2> 
                         <h4>by Katrina Lyman</h4>
@@ -107,9 +108,26 @@
                         <a href="https://idfg.idaho.gov" target="idfg">Idaho Department of Fish and Game</a>.
                         </p>
                     </article>
-                <h3>Historical Sites & Local Attractions</h3>
+                <h3>Upcomming Events</h3>
+                    <div class=events></div>
                 <h3>Outdoor Recreation Information</h3>
-                <h3>Dining, Shopping, & Accomodations</h3>
+                    <article class="recreation-1">
+                        <figure class="recreation-figure"><img src="images/idaho_lake_banner.jpg" alt="view from lake in idaho"></figure>    
+                        <h2>Something for Everyone</h2> 
+                        <p class="recreation-article">
+                        In Preston there is always something to do.
+                        <br><br>
+                        Whether you enjoy snowmobiling, cross country skiing, or sight seeing, Winter offers
+                        several fun recreation options.
+                        <br><br>
+                        You can visit one of Preston's ten reservoirs for
+                        Fishing, boating, water-skiing, swimming, bird watching, or camping.
+                        <br><br>
+                        For more information about all of the recreation options in Preston, Idaho
+                        visit <a href="https://www.prestonidaho.net/discover-the-natural-beauty-resorces-of-citys-outdoors/" target="the city of preston, idaho website">Preston Idaho Recreation</a>.<br><br>
+                        </p>
+                    </article>
+                <!-- <h3>Dining, Shopping, & Accomodations</h3> -->
         </main>
         <footer>
             <iframe class="lmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.4862669173117!2d-111.87576958447634!3d42.097055459662265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e967e1ebc7%3A0x14469667cfe31546!2s30%20N%201st%20E%2C%20Preston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1612672783355!5m2!1sen!2sus"></iframe>
@@ -122,6 +140,7 @@
             <a href="https://pinterest.com"><img src="images/iconfinder_1_Pinterest_colored_svg_5296503.png" alt="pinterest"></a>
             <a href="https://twitter.com"><img src="images/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.png" alt="twitter"></a>
             <a href="https://instagram.com"><img src="images/iconfinder_2018_social_media_popular_app_logo_instagram_3225191.png" alt="instagram"></a></p>
+            <p>Weather Data Source: <a href="https://openweathermap.org/"> OpenWeatherMap </a></p>
             </div>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -129,6 +148,7 @@
         <script src="js/main.js"></script>
         <script src="js/weather.js"></script>
         <script src="js/forecast.js"></script>
+        <script src="js/prestonevents.js"></script>
         
     </body>
 </html>
