@@ -24,7 +24,7 @@ fetch(apiURL2)
                 document.getElementById(`icon${day+1}`).setAttribute('src', `http://openweathermap.org/img/wn/${forecast.weather[item].icon}@2x.png`);
                 document.getElementById(`icon${day+1}`).setAttribute('alt', forecast.weather[item].description);
                 //get forecast temp
-                document.getElementById(`forecasttemp${day+1}`).textContent = forecast.main.temp;
+                document.getElementById(`forecasttemp${day+1}`).textContent = forecast.main.temp+' F\u00B0';
                 //get forecast desc
                 document.getElementById(`forecastdesc${day+1}`).textContent = forecast.weather[item].description;
                 day++;
