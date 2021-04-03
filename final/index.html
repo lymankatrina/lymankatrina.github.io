@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Blanding City Chamber of Commerce</title>
+        <meta name="description" content="Information on businesses and the community of Blanding Utah">
+        <meta name="author" content="Katrina Lyman">
+        <link rel="stylesheet" href="css/normalize.css"> 
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+    <body>
+        <aside id="warning">
+            <h2>Weather Alert: <span id="alert"></span></h2>
+            <p><span id="alertdesc"></span>Warning</p></aside>
+        <header>
+            <img src="images/bcc_logo.jpg" alt="blanding chamber of commerce logo">
+            <h1>Blanding<br>Chamber of<br>Commerce</h1>
+            <h2>Connecting Businesses and Community</h2>
+        </header>
+        <nav class="menu">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="main_menu" class="hide">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Blanding</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="home1">
+            <figure>
+                <img src="images/wheatgrass-960.jpg" alt="wheatgrass field at sunset" sizes="100vw"
+                    srcset="images/wheatgrass-960.jpg 960w,
+                            images/wheatgrass-640.jpg 640w,
+                            images/wheatgrass-320.jpg 320w">
+            </figure>
+            <div id="weather_summary">
+                <h2>Current Weather</h2>
+                <p>Temperature: <span  id="temp"></span>&deg; F</p>
+                <p>Condition: <span id="cond"></span></p>
+                <p>Humidity: <span id="humid"></span>&deg; F</p>
+            </div>
+            <div id="forecast">
+                <h2>Forecast</h2>
+                <article class="dayforecast">
+                    <h2 id="forecastday1"></h2>
+                    <img src="" alt="" id="icon1">
+                    <p id="forecastdesc1"></p>
+                    <p id="forecasttemp1"></p>
+                </article>
+                <article class="dayforecast">
+                    <h2 id="forecastday1"></h2>
+                    <img src="" alt="" id="icon1">
+                    <p id="forecastdesc1"></p>
+                    <p id="forecasttemp1"></p>
+                </article>
+                <article class="dayforecast">
+                    <h2 id="forecastday1"></h2>
+                    <img src="" alt="" id="icon1">
+                    <p id="forecastdesc1"></p>
+                    <p id="forecasttemp1"></p>
+                </article>
+            </div>
+        </section>
+        <section id="home2">
+            <div id="join">
+                <h2>Become a Member</h2>
+                <button>JOIN</button>
+            </div>
+            <div id="purpose">
+                <h2>Our Purpose...</h2>
+                <p>The Blanding Chamber of Commerce's primary goal is to connect business owners
+                and managers of Blanding with the community. We take pride in our community
+                and encourage everyone to support local businesses. 
+                </p>
+            </div>
+        </section>
+        <section id="home3">
+            <figure><img src="images/fields-960.jpg" alt="Sunset view of fields and distant mountains" sizes="100vw"
+                srcset="images/fields-960.jpg 960w,
+                        images/fields-640.jpg 640w,
+                        images/fields-320.jpg 320w">
+        </figure>
+            <div id="events">
+                <h2>Current Events</h2>
+                <p>event 1</p>
+                <p>event 2</p>
+                <p>event 3</p>
+            </div>        
+        </section>
+        <h2 id="local">Local Businesses</h2>
+        <section id="home4">
+                <div>
+                    <img src="http://placekitten.com/300/300" alt="business 1">
+                    <h3>business name</h3>
+                    <p>brief article</p>
+                    <p><a href="#">link</a></p>
+                </div>
+                <div>
+                    <img src="http://placekitten.com/300/300" alt="business 1">
+                    <h3>business name</h3>
+                    <p>brief article</p>
+                    <p><a href="#">link</a></p>
+                </div>
+                <div>
+                    <img src="http://placekitten.com/300/300" alt="business 1">
+                    <h3>business name</h3>
+                    <p>brief article</p>
+                    <p><a href="#">link</a></p>
+                </div>
+        </section>
+        <footer>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3160.0620147328373!2d-109.48115014903091!3d37.624229028480194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8739d47751ab059d%3A0x14b197dc31c6550a!2sBlanding%20City%20Office!5e0!3m2!1sen!2sus!4v1617322063983!5m2!1sen!2sus" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="footer-block"><h4>Blanding Chamber of Commerce</h4>
+            <a class="smap" href="https://goo.gl/maps/GEKshuguNWEwiXS79"><img src="images/iconfinder_google_4975305.png" alt="map pin icon"></a>
+            <p>&#9742; 999.999.9999</p>
+            <p>&#x1F4E7; mail@blandingchamber.com</p>
+            <a href="https://facebook.com"><img src="images/iconfinder_1_Facebook_colored_svg_copy_5296499.png" alt="facebook"></a>
+            <a href="https://pinterest.com"><img src="images/iconfinder_1_Pinterest_colored_svg_5296503.png" alt="pinterest"></a>
+            <a href="https://twitter.com"><img src="images/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.png" alt="twitter"></a>
+            <a href="https://instagram.com"><img src="images/iconfinder_2018_social_media_popular_app_logo_instagram_3225191.png" alt="instagram"></a></p>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/webfont.js"></script>
+        <script src="js/forecast.js"></script>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

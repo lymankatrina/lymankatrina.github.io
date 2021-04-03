@@ -1,0 +1,75 @@
+{
+    "cityName" : "Blanding",
+    "state" : "Utah",
+    "cityZip" : "84511",
+    "business" : [
+        {
+            "businessName" : "Redd's Ace Hardware",    
+            "businessPhone" : "435-678-2228",
+            "businessAddress" : "82 S Main St",
+            "website" : "https://www.acehardware.com/store=details/15886",
+            "businessType" : [
+                "hardware",
+                "home & garden"
+            ]
+        },
+        {
+            "businessName" : "San Juan Building Supply",
+            "businessPhone" : "435-678-2000",
+            "businessAddress" : "1050 S Main St",
+            "website" : "http://www.sjbs.com",
+            "businessType" : [
+                "construction"
+            ]
+        },
+        {
+            "businessName": "NAPA Auto Parts",
+            "businessPhone" : "435-678-2312",
+            "businessAddress" : "54 E 100 S",
+            "website" : "https://www.napaonline.com/stores/ut/blanding/54-east-1st-south?cid=pl_yext_jobber_MotorPartsOfBlanding_28058",
+            "businessType": [
+                "auto parts"
+            ]
+        },
+        {
+            "businessName" : "Montella's Repair",
+            "businessPhone" : "435-678-2419",
+            "businessAddress" : "1901 South Main",
+            "website" : "https://montellasrepair-com.webs.com/",
+            "businessType" : [
+                "Mechanic"
+            ]
+        },
+        {
+            "businessName" : "San Juan Pharmacy",
+            "businessPhone" : "435-678-2781",
+            "businessAddress" : "65 S Main",
+            "website" : "https://www.facebook.com/pages/category/Gift-Shop/San-Juan-Pharmacy-109389752433221/",
+            "businessType" : [
+                "gift shop",
+                "pharmacy",
+                "drug-store"
+            ]
+        },
+        {
+            "businessName" : "The Flower Shop & Sage Brush Rose",
+            "businessPhone" : "435-678-3008",
+            "businessAddress" : "77 S Main",
+            "website" : "http://LAPETITEFLOWERSHOPBLANDING.com/",
+            "businessType" : [
+                "floral",
+                "garden"
+            ]
+        },
+        {
+            "businessName" : "Clark's Market",
+            "businessPhone" : "435-678-2721",
+            "businessAddress" : "820 S Main",
+            "website" : "https://www.clarksmarket.com/",
+            "businessType": [
+                "grocery",
+                "general store"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+.menu button{
+    display: none;
+}  
+.hide {
+    display: flex;
+    justify-content: center;
+}
+.menu {
+    align-items: center;
+}  
+#main_menu li {
+    float: left;
+}
+#main_menu li a {
+    border: none;
+    border-right: 1px solid rgba(0,0,0,0.3);
+    padding: .8rem 1rem;
+}

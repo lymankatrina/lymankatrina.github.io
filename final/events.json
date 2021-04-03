@@ -1,0 +1,33 @@
+{
+    "events" : [
+        {
+            "eventName" : "SJH Color Fest",
+            "eventDate" : "Sat, Apr 3, 9:30 AM - 2:00 PM",
+            "eventDesc" : "NHS Egg Hunt, 5K Color Run, Bunny Hop, and Color Festival booths. Fun for the whole family!",
+            "eventLocation" : "https://goo.gl/maps/taxZZPMmg667w4zh8",
+            "eventWebsite" : "http://sjhcolorfest.weebly.com/"
+        },
+        {    
+            "eventName" : "Discover 4-H Acting Workshop",
+            "eventDate" : "Thu, Apr 8, 3:30 PM - 5:00 PM",
+            "eventDesc" : "Youth ages 12 and up learn stage presence, creating characters and having fun with costomes and props.",
+            "eventLocation" : "https://goo.gl/maps/NrbzU1H1DWptW3BZ7",
+            "eventWebsite" : "https://www.facebook.com/events/1011784632682020/"
+        },
+        {
+            "eventName" : "2021 Jeep Jamboree USA - Arch Canyon",
+            "eventDate" : "Thu, Apr 22, 5:00 PM - Sat, Apr 24, 7:30 PM",
+            "eventDesc" : "This Jamboree takes you through the area of cliffs the Anasazi called home.",
+            "eventLocation" : "https://goo.gl/maps/QHTQbgcYmCt4C9vs8",
+            "eventWebsite" : "https://www.facebook.com/events/blanding-utah/2021-jeep-jamboree-usa-arch-canyon/2870775929820819/"
+        },
+        {
+            "eventName" : "Youth Sports Registration",
+            "eventDate" : "Deadline - April 9, 10:00 PM",
+            "eventDesc" : "Visit the new online program for registering for rec sports.",
+            "eventLocation" : "https://goo.gl/maps/qXgqfkDMjCAsKtJ96",
+            "eventWebsite" : "https://www.blanding-ut.gov/sports-registration?fbclid=IwAR2MXo0GKr4E0j4maohX4xBSFTItJf00Ia0FRlUo8eIy8VtFmKjo6eQg0BA"
+        }
+    ]
+}
+
