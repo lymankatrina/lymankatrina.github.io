@@ -39,7 +39,9 @@ footer {
 #home3 img {
     width: 100%;
 }
-
+#home4 div {
+    max-width: 50%;
+}
 
 
 }

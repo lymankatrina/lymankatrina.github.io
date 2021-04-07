@@ -9,6 +9,7 @@ fetch(requestURL)
     const prophets = jsonObject['prophets'];
     //select output location    
     const cards = document.querySelector('.cards');
+    
     prophets.forEach(prophet => {
         let card = document.createElement('section');
         let h2 = document.createElement('h2');
