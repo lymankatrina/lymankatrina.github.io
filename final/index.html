@@ -15,7 +15,7 @@
     <body>
         <aside id="warning">
             <h2>Weather Alert: <span id="alert"></span></h2>
-            <p><span id="alertdesc"></span>Warning</p></aside>
+            <p>Warning: <span id="alertdesc"></span></p></aside>
         <header>
             <img src="images/bcc_logo.jpg" alt="blanding chamber of commerce logo">
             <h1>Blanding<br>Chamber of<br>Commerce</h1>
@@ -48,21 +48,21 @@
                 <h2>Forecast</h2>
                 <article class="dayforecast">
                     <h2 id="forecastday1"></h2>
-                    <img src="" alt="" id="icon1">
+                    <img id="forecasticon1" src="" alt="">
                     <p id="forecastdesc1"></p>
                     <p id="forecasttemp1"></p>
                 </article>
                 <article class="dayforecast">
-                    <h2 id="forecastday1"></h2>
-                    <img src="" alt="" id="icon1">
-                    <p id="forecastdesc1"></p>
-                    <p id="forecasttemp1"></p>
+                    <h2 id="forecastday2"></h2>
+                    <img src="" alt="" id="forecasticon2">
+                    <p id="forecastdesc2"></p>
+                    <p id="forecasttemp2"></p>
                 </article>
                 <article class="dayforecast">
-                    <h2 id="forecastday1"></h2>
-                    <img src="" alt="" id="icon1">
-                    <p id="forecastdesc1"></p>
-                    <p id="forecasttemp1"></p>
+                    <h2 id="forecastday3"></h2>
+                    <img src="" alt="" id="forecasticon3">
+                    <p id="forecastdesc3"></p>
+                    <p id="forecasttemp3"></p>
                 </article>
             </div>
         </section>
@@ -84,33 +84,37 @@
                 srcset="images/fields-960.jpg 960w,
                         images/fields-640.jpg 640w,
                         images/fields-320.jpg 320w">
-        </figure>
-            <div id="events">
-                <h2>Current Events</h2>
-                <p>event 1</p>
-                <p>event 2</p>
-                <p>event 3</p>
+            </figure>
+            <div class="eventlist">
+
+                
             </div>        
         </section>
         <h2 id="local">Local Businesses</h2>
         <section id="home4">
                 <div>
-                    <img src="http://placekitten.com/300/300" alt="business 1">
-                    <h3>business name</h3>
-                    <p>brief article</p>
-                    <p><a href="#">link</a></p>
+                    <h2>Redd's Ace Hardware</h2>
+                    <img src="images/ace-320.jpg" alt="Exterior 
+                    picture of Redd's Ace Hardware">
+                    <p>Redd's Ace Hardware first opened in 1909 as the "Grayson Co-op". It was the original general store in town, established by the founding settlers of Blanding
+                         which was then known as "Grayson Utah. The Redd's have owned and operated this business for over 110 years. </p>
+                    <p class="weblink"><a href="https://www.acehardware.com/store-details/15886?gclid=CjwKCAjwjbCDBhAwEiwAiudByzosG2N9VinccA3rIdSf6d2UBnwXiw4W48KgfuvAI10AeciKgMChYRoCbVkQAvD_BwE&gclsrc=aw.ds">Website</a></p>
                 </div>
                 <div>
-                    <img src="http://placekitten.com/300/300" alt="business 1">
-                    <h3>business name</h3>
-                    <p>brief article</p>
-                    <p><a href="#">link</a></p>
+                    <h2>San Juan Pharmacy & Gift</h2>
+                    <img src="images/pharmacy-320.jpg" alt="Interior display of gift shop items available at San Juan Pharmacy">
+                    <p>Located at 65 S. Main, San Juan Pharmacy in Blanding offers professional service with friendly hometown charm.
+                        In addition to finding all of your pharmaceutical needs, you will love the variety of quality gifts, and unique decorative items available.
+                    </p>
+                    <p class="weblink"><a href="https://www.facebook.com/pages/category/Gift-Shop/San-Juan-Pharmacy-109389752433221/">Website</a></p>
                 </div>
                 <div>
-                    <img src="http://placekitten.com/300/300" alt="business 1">
-                    <h3>business name</h3>
-                    <p>brief article</p>
-                    <p><a href="#">link</a></p>
+                    <h2>San Juan Theater</h2>
+                    <img src="images/theater-320.jpg" alt="Exterior view of San Juan Theater">
+                    <p>San Juan County Utah's only movie theater is a great source of entertainment. Movies show nightly, Monday through Saturday at 7:00 PM. 
+                        The theater is also available for private parties. While there is only one screen and seating for 290 people, the customer service is excellent
+                        and so is the popcorn! </p>
+                    <p class="weblink"><a href="https://www.facebook.com/sanjuantheater/">Website</a></p>
                 </div>
         </section>
         <footer>
@@ -128,6 +132,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script src="js/webfont.js"></script>
         <script src="js/forecast.js"></script>
+        <script src="js/events.js"></script>
     </body>
 
 
