@@ -13,9 +13,9 @@
         <link rel="shortcut icon" href="favicon.ico">
     </head>
     <body>
-        <aside id="warning">
-            <h2>Weather Alert: <span id="alert"></span></h2>
-            <p>Warning: <span id="alertdesc"></span></p></aside>
+        <aside id="warnings">
+            <h2><span id="alert"></span></h2>
+            <p><span id="alertdesc"></span></p></aside>
         <header>
             <img src="images/bcc_logo.jpg" alt="blanding chamber of commerce logo">
             <h1>Blanding<br>Chamber of<br>Commerce</h1>
@@ -39,27 +39,27 @@
                             images/wheatgrass-320.jpg 320w">
             </figure>
             <div id="weather_summary">
-                <h2>Current Weather</h2>
+                <h2>Today's Weather</h2>
                 <p>Temperature: <span  id="temp"></span>&deg; F</p>
                 <p>Condition: <span id="cond"></span></p>
                 <p>Humidity: <span id="humid"></span>&deg; F</p>
             </div>
             <div id="forecast">
-                <h2>Forecast</h2>
+                <h2>3 Day Forecast</h2>
                 <article class="dayforecast">
-                    <h2 id="forecastday1"></h2>
+                    <h3 id="forecastday1"></h3>
                     <img id="forecasticon1" src="" alt="">
                     <p id="forecastdesc1"></p>
                     <p id="forecasttemp1"></p>
                 </article>
                 <article class="dayforecast">
-                    <h2 id="forecastday2"></h2>
+                    <h3 id="forecastday2"></h3>
                     <img src="" alt="" id="forecasticon2">
                     <p id="forecastdesc2"></p>
                     <p id="forecasttemp2"></p>
                 </article>
                 <article class="dayforecast">
-                    <h2 id="forecastday3"></h2>
+                    <h3 id="forecastday3"></h3>
                     <img src="" alt="" id="forecasticon3">
                     <p id="forecastdesc3"></p>
                     <p id="forecasttemp3"></p>
@@ -86,8 +86,35 @@
                         images/fields-320.jpg 320w">
             </figure>
             <div class="eventlist">
-
-                
+                <h2>Local Events!</h2>
+                <article>
+                    <h3>SJH Color Fest</h3>
+                    <p>Date: Sat, Apr 3, 9:30 AM - 2:00 PM</p>
+                    <p>Description: NHS Egg Hunt, 5K Color Run, Bunny Hop, and Color Festival booths. Fun for the whole family!</p>
+                    <p><a href="https://goo.gl/maps/taxZZPMmg667w4zh8">Location</a> | 
+                        <a href="http://sjhcolorfest.weebly.com/">More Information</a></p>
+                </article>
+                <article>
+                    <h3>Discover 4-H Acting Workshop</h3>
+                    <p>Date: Thu, Apr 8, 3:30 PM - 5:00 PM</p>
+                    <p>Description: Youth ages 12 and up learn stage presence, creating characters and having fun with costomes and props.</p>
+                    <p><a href="https://goo.gl/maps/NrbzU1H1DWptW3BZ7">Location</a> | 
+                        <a href="https://www.facebook.com/events/1011784632682020/">More Information</a></p>
+                </article>
+                <article>
+                    <h3>2021 Jeep Jamboree USA - Arch Canyon</h3>
+                    <p>Date: Thu, Apr 22, 5:00 PM - Sat, Apr 24, 7:30 PM</p>
+                    <p>Description: This Jamboree takes you through the area of cliffs the Anasazi called home.</p>
+                    <p><a href="https://goo.gl/maps/QHTQbgcYmCt4C9vs8">Location</a> | 
+                        <a href="https://www.facebook.com/events/blanding-utah/2021-jeep-jamboree-usa-arch-canyon/2870775929820819/">More Information</a></p>
+                </article>
+                <article>
+                    <h3>Youth Sports Registration</h3>
+                    <p>Date: Deadline - April 9, 10:00 PM</p>
+                    <p>Description: Visit the new online program for registering for rec sports.</p>
+                    <p><a href="https://goo.gl/maps/qXgqfkDMjCAsKtJ96">Location</a> | 
+                        <a href="https://www.blanding-ut.gov/sports-registration?fbclid=IwAR2MXo0GKr4E0j4maohX4xBSFTItJf00Ia0FRlUo8eIy8VtFmKjo6eQg0BA">More Information</a></p>
+                </article>
             </div>        
         </section>
         <h2 id="local">Local Businesses</h2>
@@ -131,6 +158,7 @@
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script src="js/webfont.js"></script>
+        <script src="js/main.js"></script>
         <script src="js/forecast.js"></script>
         <script src="js/events.js"></script>
     </body>
