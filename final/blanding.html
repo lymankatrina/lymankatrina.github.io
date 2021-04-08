@@ -13,9 +13,6 @@
         <link rel="shortcut icon" href="favicon.ico">
     </head>
     <body>
-        <aside id="warnings">
-            <h2><span id="alert"></span></h2>
-            <p><span id="alertdesc"></span></p></aside>
         <header>
             <img src="images/bcc_logo.jpg" alt="blanding chamber of commerce logo">
             <h1>Blanding<br>Chamber of<br>Commerce</h1>
@@ -24,67 +21,41 @@
         <nav class="menu">
             <button onclick="toggleMenu()">&#9776; Menu</button>
             <ul id="main_menu" class="hide">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="blanding.html">Blanding</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="blanding.html">Blanding</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <section id="home1">
-            <figure>
-                <img src="images/wheatgrass-960.jpg" alt="wheatgrass field at sunset" sizes="100vw"
-                    srcset="images/wheatgrass-960.jpg 960w,
-                            images/wheatgrass-640.jpg 640w,
-                            images/wheatgrass-320.jpg 320w">
-            </figure>
-            <div id="weather_summary">
-                <h2>Today's Weather</h2>
-                <p>Temperature: <span  id="temp"></span>&deg; F</p>
-                <p>Condition: <span id="cond"></span></p>
-                <p>Humidity: <span id="humid"></span>&deg; F</p>
-            </div>
-            <div id="forecast">
-                <h2>3 Day Forecast</h2>
-                <article class="dayforecast">
-                    <h3 id="forecastday1"></h3>
-                    <img id="forecasticon1" src="" alt="">
-                    <p id="forecastdesc1"></p>
-                    <p id="forecasttemp1"></p>
-                </article>
-                <article class="dayforecast">
-                    <h3 id="forecastday2"></h3>
-                    <img src="" alt="" id="forecasticon2">
-                    <p id="forecastdesc2"></p>
-                    <p id="forecasttemp2"></p>
-                </article>
-                <article class="dayforecast">
-                    <h3 id="forecastday3"></h3>
-                    <img src="" alt="" id="forecasticon3">
-                    <p id="forecastdesc3"></p>
-                    <p id="forecasttemp3"></p>
-                </article>
-            </div>
-        </section>
-        <section id="home2">
-            <div id="join">
-                <h2>Become a Member</h2>
-                <button>JOIN</button>
-            </div>
-            <div id="purpose">
-                <h2>Our Purpose...</h2>
-                <p>The Blanding Chamber of Commerce's primary goal is to connect business owners
-                and managers of Blanding with the community. We take pride in our community
-                and encourage everyone to support local businesses. 
+        <section class="blanding1">
+            <img src="images/parade-960.jpg" alt="San Juan Public Health's Fourth of July float on Blanding Main Street in front of Pop's Burritos">
+            <Article class="blanding-history">
+                <h2>Blanding History</h2>
+                <p>Blanding Utah is a rural community located in the South East corner of the State of Utah.
+                    The town of Blanding was settled by early members of the Church of Jesus Christ of Latter Day Saints who 
+                    travelled by wagon from Escalante Utah accross a trail known as the Hole in the Rock trail.
+                    Many of Blanding's residents are directly descended from those early settlers. The citizens
+                    love the area and their roots.
                 </p>
-            </div>
+            </Article>
         </section>
-        <section id="home3">
-            <figure><img src="images/fields-960.jpg" alt="Sunset view of fields and distant mountains" sizes="100vw"
-                srcset="images/fields-960.jpg 960w,
-                        images/fields-640.jpg 640w,
-                        images/fields-320.jpg 320w">
-            </figure>
+        <section class="blanding2">
+            <div class="blanding-demographics">
+                <p>Population: 3,685</p>
+                <p>Median Household Income: $62,938</p>
+            </div>
+            <ul>Blanding Industries
+                <li>Educational Services</li>
+                <li>Health Care & Social Assistance</li>
+                <li>Retail Trade</li>
+                <li>Hospitality Industry & Tourism</li>
+                <li>Mining, Quarrying, Oil & Gas Extraction</li>
+                <li>Agrigulture, Forestry, Fishing & Hunting</li>
+            </ul>
+        </section>
+        <section class="blanding3">
+            <h2>Blanding Events</h2>
             <div class="eventlist">
                 <h2>Local Events!</h2>
                 <article>
@@ -115,34 +86,7 @@
                     <p><a href="https://goo.gl/maps/qXgqfkDMjCAsKtJ96">Location</a> | 
                         <a href="https://www.blanding-ut.gov/sports-registration?fbclid=IwAR2MXo0GKr4E0j4maohX4xBSFTItJf00Ia0FRlUo8eIy8VtFmKjo6eQg0BA">More Information</a></p>
                 </article>
-            </div>        
-        </section>
-        <h2 id="local">Local Businesses</h2>
-        <section id="home4">
-                <div>
-                    <h2>Redd's Ace Hardware</h2>
-                    <img src="images/ace-320.jpg" alt="Exterior 
-                    picture of Redd's Ace Hardware">
-                    <p>Redd's Ace Hardware first opened in 1909 as the "Grayson Co-op". It was the original general store in town, established by the founding settlers of Blanding
-                         which was then known as "Grayson Utah. The Redd's have owned and operated this business for over 110 years. </p>
-                    <p class="weblink"><a href="https://www.acehardware.com/store-details/15886?gclid=CjwKCAjwjbCDBhAwEiwAiudByzosG2N9VinccA3rIdSf6d2UBnwXiw4W48KgfuvAI10AeciKgMChYRoCbVkQAvD_BwE&gclsrc=aw.ds">Website</a></p>
-                </div>
-                <div>
-                    <h2>San Juan Pharmacy & Gift</h2>
-                    <img src="images/pharmacy-320.jpg" alt="Interior display of gift shop items available at San Juan Pharmacy">
-                    <p>Located at 65 S. Main, San Juan Pharmacy in Blanding offers professional service with friendly hometown charm.
-                        In addition to finding all of your pharmaceutical needs, you will love the variety of quality gifts, and unique decorative items available.
-                    </p>
-                    <p class="weblink"><a href="https://www.facebook.com/pages/category/Gift-Shop/San-Juan-Pharmacy-109389752433221/">Website</a></p>
-                </div>
-                <div>
-                    <h2>San Juan Theater</h2>
-                    <img src="images/theater-320.jpg" alt="Exterior view of San Juan Theater">
-                    <p>San Juan County Utah's only movie theater is a great source of entertainment. Movies show nightly, Monday through Saturday at 7:00 PM. 
-                        The theater is also available for private parties. While there is only one screen and seating for 290 people, the customer service is excellent
-                        and so is the popcorn! </p>
-                    <p class="weblink"><a href="https://www.facebook.com/sanjuantheater/">Website</a></p>
-                </div>
+            </div>
         </section>
         <footer>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3160.0620147328373!2d-109.48115014903091!3d37.624229028480194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8739d47751ab059d%3A0x14b197dc31c6550a!2sBlanding%20City%20Office!5e0!3m2!1sen!2sus!4v1617322063983!5m2!1sen!2sus" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -162,18 +106,4 @@
         <script src="js/forecast.js"></script>
         <script src="js/events.js"></script>
     </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
